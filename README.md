@@ -1,2 +1,2 @@
-# feng497
+# FENG497
 Izmir University of Economics Senior Project
