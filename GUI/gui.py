@@ -1,8 +1,6 @@
 import PySimpleGUI as sg
 import cv2
 import os
-#ecvdekal
-#olsanaaq
 
 
 def pypy480():
