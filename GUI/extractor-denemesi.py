@@ -4,6 +4,8 @@ class extractor():
 
 
     def main(self):
+        
+        files  = ['480','720','1080']
 
         vidcap = cv2.VideoCapture('video480.avi') OR cv2.VideoCapture('video720.avi') OR cv2.VideoCapture('video1080.avi')
 
