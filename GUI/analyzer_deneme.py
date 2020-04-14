@@ -32,8 +32,8 @@ class analyzer:
             # show the plot
             pyplot.show()
 
-        """files = []
-        for i in range():
+        files = []
+        for i in range(1, 5, 1): #ortadaki resim sayısı
             string = 'image'+i
             files.append(string)
 
@@ -47,6 +47,6 @@ class analyzer:
                 # detect faces in the image
                 faces = detector.detect_faces(pixels)
                 # display faces on the original image
-                draw_image_with_boxes(filename, faces)"""
+                draw_image_with_boxes(filename, faces)
 
 
