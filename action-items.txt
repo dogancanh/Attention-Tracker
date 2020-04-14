@@ -1,0 +1,7 @@
+###################ACTIONS ITEMS###################
+
+-GUI guzellestirilmesi
+-Database tutulacak veriler kararlastirilmasi
+-Dikkat hesaplanması
+-Video tutulsun mu silinsin mi ? Direk foto capture mı yapılsın ?
+-Mobil tarafa verilecek feedback kararlastirilmasi
