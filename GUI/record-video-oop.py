@@ -50,7 +50,7 @@ class camera():
         h = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
         out = cv2.VideoWriter(self.filename, self.get_video_type(self.filename), self.frames_per_second,(int(w),int(h)))
         while True:
-            ret, frame = cap.read()
+            ret, frame = cap.read() # YAGO BURADA RET DEGİSKENİ KULLANILMIYOR HATASI VERİYOR !!
             out.write(frame)
             cv2.imshow('frame', frame)
             if cv2.waitKey(1) & 0xFF == ord('q'):
