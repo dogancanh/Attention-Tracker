@@ -43,7 +43,7 @@ class camera():
 
     def main(self):
 
-        cap = cv2.VideoCapture(0)
+        cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
         cap.set(3, int(self.res[0]))
         cap.set(4, int(self.res[1]))
         w = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
