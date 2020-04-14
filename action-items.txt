@@ -1,4 +1,6 @@
-###################ACTIONS ITEMS###################
+-----------------ACTIONS ITEMS--------------------
+
+15.04.2020
 
 -GUI guzellestirilmesi
 -Database tutulacak veriler kararlastirilmasi
