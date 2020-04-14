@@ -1,9 +1,9 @@
 import PySimpleGUI as sg
 import cv2
 import os
-#meraba
-#olartok
-#puhhh
+#yagoevdemi?
+#semihnerede?
+#doginerede
 
 
 def pypy480():
