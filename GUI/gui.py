@@ -2,6 +2,8 @@ import PySimpleGUI as sg
 import cv2
 import os
 #meraba
+#olartok
+#puhhh
 
 
 def pypy480():
