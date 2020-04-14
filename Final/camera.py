@@ -1,4 +1,4 @@
-import cv2
+from cv2 import cv2
 import numpy as np
 import os
 
@@ -11,11 +11,11 @@ class camera():
         self.res = res
 
     # Set resolution for the video capture
-    def change_res(cap, width, height):
+    def change_res(self, cap, width, height):
         cap.set(3, width)
         cap.set(4, height)
 
-    def get_dims(cap, res='1080p'):
+    def get_dims(self, cap, res='1080p'):
         STD_DIMENSIONS = {
             "480p": (640, 480),
             "720p": (1280, 720),
