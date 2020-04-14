@@ -3,6 +3,7 @@ import cv2
 import os
 #yagoevdemi?
 #semihnerede?
+#doginerede
 
 
 def pypy480():
