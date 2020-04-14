@@ -32,13 +32,13 @@ class analyzer:
             # show the plot
             pyplot.show()
 
-        """files = []
+        files = []
         for i in range():
             string = 'image'+i
             files.append(string)
 
         while True:
-            for i in range(files):
+            for i in range(1,5,1):
                 filename = i
                 # load image from file
                 pixels = pyplot.imread(filename)
@@ -47,6 +47,6 @@ class analyzer:
                 # detect faces in the image
                 faces = detector.detect_faces(pixels)
                 # display faces on the original image
-                draw_image_with_boxes(filename, faces)"""
+                draw_image_with_boxes(filename, faces)
 
 
