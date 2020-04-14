@@ -33,14 +33,15 @@
 #             pyplot.show()
 
 #         files = []
-#         for i in range():
 #         for i in range(1, 5, 1): #ortadaki resim sayısı
-#             string = 'image'+i
+#             string = 'image'+str(i)+'.jpg'
 #             files.append(string)
+#             print(i)
 
 #         while True:
-#             for i in range(1,5,1):
+#             for i in files:
 #                 filename = i
+#                 print(i)
 #                 # load image from file
 #                 pixels = pyplot.imread(filename)
 #                 # create the detector, using default weights
@@ -49,5 +50,5 @@
 #                 faces = detector.detect_faces(pixels)
 #                 # display faces on the original image
 #                 draw_image_with_boxes(filename, faces)
-
+#             break
 
