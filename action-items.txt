@@ -1,9 +1,0 @@
------------------ACTIONS ITEMS--------------------
-
-15.04.2020
-
--GUI guzellestirilmesi
--Database tutulacak veriler kararlastirilmasi
--Dikkat hesaplanması
--Video tutulsun mu silinsin mi ? Direk foto capture mı yapılsın ?
--Mobil tarafa verilecek feedback kararlastirilmasi
