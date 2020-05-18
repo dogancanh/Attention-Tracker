@@ -1,4 +1,4 @@
 # FENG497
 
-Izmir University of Economics Senior Project
+<h1 align="center"><b>YAPIM AŞAMASINDA</b></h1>
 
