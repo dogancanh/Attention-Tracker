@@ -1,1 +1,1 @@
-<center><h1><b>YAPIM AŞAMASINDA</b></h1>
+<h1 align="center"><b>YAPIM AŞAMASINDA</b></h1>
