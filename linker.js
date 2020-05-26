@@ -20,7 +20,7 @@ function get_face() {
 
     var options = {
         scriptPath: path.join(__dirname, './'),
-        pythonPath: 'C:/Users/YGU/AppData/Local/Programs/Python/Python37-32/python.exe',
+        pythonPath: 'C:/Users/dhird/AppData/Local/Programs/Python/Python37/python.exe',
         args: [idnum,course]
     };
     PythonShell.run('yuzbulanson.py', options, function (err, results) {
