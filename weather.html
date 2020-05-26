@@ -1,0 +1,52 @@
+<html>
+<head>
+  <script src="linker.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['line']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var mins=[];
+      var mins2=[]
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Minutes');
+      data.addColumn('number', 'Attention(%)');
+      ipcRenderer.on("datas", (event, args) => {
+        args.forEach(function (item,index) {
+          var mn =args[index]["min"].getMinutes();
+          var apm =args[index]["attentionP"];
+          mins.push([apm]);
+          mins2.push([mn]);
+          data.addRows([[mn,apm]]);
+        })
+      });
+      console.log(data);
+
+
+      var options = {
+        chart: {
+          title: "Recent course's attention values per minute",
+          subtitle: 'in percentage(%)'
+        },
+        width: 575,
+        height: 350,
+        axes: {
+          x: {
+            0: {side: 'bottom'}
+          }
+        }
+      };
+
+      var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+  </script>
+</head>
+<body>
+<center>
+  <div id="line_top_x"></div>
+</center>
+</body>
+</html>

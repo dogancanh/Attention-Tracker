@@ -1,0 +1,90 @@
+<link rel="stylesheet" type="text/css" href="huhu.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="vendor/jquery/jquery-3.2.1.min.js">
+<script src="linker.js"></script>
+<html>
+<head>
+    <script>const db = require("./connection").db;
+    setInterval(function () {
+        var sessionID = 'SE311';
+        var date = new Date();
+        var m = date.getMonth() + 1;
+        var d = date.getDate();
+        if (m < 10)
+            m = '0' + m;
+        if (d < 10)
+            d = '0' + d;
+        var tStart = date.getFullYear() + '-' + m + '-' + d + ' ' + date.getHours() + ':' + date.getMinutes() + ':00';
+        var tEnd = date.getFullYear() + '-' + m + '-' + d + ' ' + date.getHours() + ':' + date.getMinutes() + ':59';
+        console.log([sessionID, tStart, tEnd]);
+        db.query("SELECT AVG(attentionP) as aver FROM attentionstudent WHERE sessionID=?  AND min>=? AND min<=?", [sessionID, tStart, tEnd], (error, results, fields) => {
+
+            if (results.length > 0) {
+                var average = results[0].aver;
+            }
+            document.getElementById('averageField').innerHTML = '%' + average;
+            if(average>75){
+                document.getElementById("averageField").className = "alert alert-success";
+            }
+            else if (average<50){
+                document.getElementById("averageField").className = "alert alert-danger";
+            }
+            else{
+                document.getElementById("averageField").className = "alert alert-warning";
+            }
+        })
+
+    }, 1000);
+    </script>
+</head>
+<body>
+<title>Attention Tracker Teacher</title>
+<div class="row">
+    <div class="col-lg-7 mx-auto text-white text-center pt-5">
+        <h1 class="display-4">Attention Tracker</h1>
+        <h1><span class="badge badge-secondary">Teacher</span></h1>
+        </p>
+    </div>
+</div>
+
+<div class="row py-5 px-4">
+    <div class="col-xl-4 col-md-6 col-sm-10 mx-auto">
+        <div class="bg-white shadow rounded overflow-hidden">
+            <div class="px-4 pt-0 pb-4 bg-dark">
+                <div class="media align-items-end profile-header">
+                    <div class="profile mr-3"><img src="https://cdn1.iconfinder.com/data/icons/instagram-ui-colored/48/JD-17-512.png" alt="..." width="130" class="rounded mb-2 img-thumbnail">
+                        <button class="btn btn-dark btn-sm btn-block"><a style="color:white" href="../../Desktop/Yeni%20klasör/teacherpage_live.html">Go Live</a></button>
+                    </div>
+                    <div class="media-body mb-5 text-white">
+                        <h4 class="mt-0 mb-0">Kutluhan Erol</h4>
+                        <p class="small mb-4"> <i class="fa fa-university"></i> Izmir University of Economics</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-light p-4 d-flex justify-content-end text-center">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                        <h5 class="font-weight-bold mb-0 d-block">3</h5><small class="text-muted"> <i class="fa fa-book"></i> Courses</small>
+                    </li>
+                    <li class="list-inline-item">
+                        <h5 class="font-weight-bold mb-0 d-block">5</h5><small class="text-muted"> <i class="fa fa-envelope"></i> Messages</small>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="py-4 px-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h5 class="mb-0">Average Attention</h5>
+                    <div id="averageField" class="alert alert-success" role="alert">75%</div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

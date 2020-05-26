@@ -1,0 +1,22 @@
+.profile-header 
+{
+  transform: translateY(5rem);
+}
+  
+body
+{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #654ea3;
+    background: -webkit-linear-gradient(to right, #654ea3, #eaafc8);
+    background: linear-gradient(to right, #654ea3, #eaafc8);
+}
+.body .text-center
+{
+    position: absolute;
+    top: 100%;
+    padding: 10px 0 0;
+    color: #3f3f44;
+    font-weight: 350;
+}
