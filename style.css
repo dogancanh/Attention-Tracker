@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 *
+
 {
     margin:0;
     padding: 0;
@@ -67,6 +68,25 @@ body
 {
     stroke-dashoffset: calc(440 - (440 * 56) / 100);
     stroke: #03f42b;
+    opacity: 10;
+    animation: animate-circle 3s cubic-bezier(0,0.23,1,.1); 
+}
+@keyframes animate-circle {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: 440;
+    }
+    30% {
+        opacity: 0.30;
+        stroke-dashoffset: 200;
+    }
+    80% {
+        opacity: 0.80;
+        stroke-dashoffset: 100;
+    }
+    100% {
+        opacity: 10;
+    }
 }
 .box .percent .number
 {
