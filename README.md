@@ -1,24 +1,29 @@
+# Attention Tracker
 
-<snippet>
-  <content><![CDATA[
-# ${Attention Tracker}
-TODO: Write a project description
+Attention Tracker is a senior year project that helps you to keep tracking attention of your audience.
+
 ## Installation
-TODO: Describe the installation process
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install foobar
+```
+
 ## Usage
-TODO: Write usage instructions
+
+```python
+import foobar
+
+foobar.pluralize('word') # returns 'words'
+foobar.pluralize('goose') # returns 'geese'
+foobar.singularize('phenomena') # returns 'phenomenon'
+```
+
 ## Contributing
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-## History
-TODO: Write history
-## Credits
-TODO: Write credits
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
 ## License
-TODO: Write license
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
+[MIT](https://choosealicense.com/licenses/mit/)
