@@ -1,6 +1,6 @@
 # Attention Tracker
 
-Attention Tracker is a senior year project that helps you to keep tracking attention of your audience.
+Attention Tracker is a senior project that helps you to keep tracking attention of your audience. Developed a system of attention tracking, which will track the attention of the students on cameras and let the teacher keep track of student’s attention. It also notifies the teacher if the average attendance is below critical points. Teachers can also access the previous lecture’s attention points and display detailed charts.
 
 ## Installation
 
