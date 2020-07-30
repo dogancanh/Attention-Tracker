@@ -4,10 +4,10 @@ Attention Tracker is a senior project that helps you to keep tracking attention 
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the git clone command to install Attention Tracker.
 
 ```bash
-pip install foobar
+git clone https://github.com/dogancanh/Attention-Tracking
 ```
 
 ## Usage
